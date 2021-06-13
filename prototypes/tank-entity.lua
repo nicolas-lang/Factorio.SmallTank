@@ -1,10 +1,16 @@
-﻿local empty_sprite = {
+﻿local pipecovers = require("__base__/prototypes/entity/pipecovers")
+local data = _G.data
+local circuit_connector_definitions = _G.circuit_connector_definitions
+local universal_connector_template = _G.universal_connector_template
+-------------------------------------------------------------------------------
+local empty_sprite = {
 	filename    = "__core__/graphics/empty.png",
 	priority    = "extra-high",
 	width       = 1,
 	height      = 1,
 	frame_count = 1
 }
+-------------------------------------------------------------------------------
 local fluidSize = 15000
 local fluid_h = 1
 local fluid_w = fluidSize/fluid_h/100
@@ -33,7 +39,7 @@ local myStorageTank = {
 			{ position = {-1.5, -0.5}},
 			{ position = {-1.5, 0.5}}
 		},
-		pipe_covers = pipecoverspictures(),
+		pipe_covers = pipecovers.pipecoverspictures(),
 	},
 	flow_length_in_ticks = 1,
 	pictures = {
@@ -87,7 +93,6 @@ circuit_connector_definitions["small-storage-tank"] = circuit_connector_definiti
 		{ variation = 4, main_offset = util.by_pixel(-4, 18), shadow_offset = util.by_pixel(-2, 18), show_shadow = true }
 	}
 )
-
 myStorageTank.vehicle_impact_sound = util.table.deepcopy(data.raw["storage-tank"]["storage-tank"]["vehicle_impact_sound"])
 myStorageTank.working_sound = util.table.deepcopy(data.raw["storage-tank"]["storage-tank"]["working_sound"])
 myStorageTank.circuit_connector_sprites = circuit_connector_definitions["small-storage-tank"].sprites
