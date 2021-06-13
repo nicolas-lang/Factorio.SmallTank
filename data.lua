@@ -1,1 +1,5 @@
-log("data")
+require("prototypes.tanks-category")
+require("prototypes.tank-entity")
+require("prototypes.tank-item")
+require("prototypes.tank-recipe")
+require("prototypes.tank-tech")
