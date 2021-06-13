@@ -1,5 +1,6 @@
-﻿local pipecovers = require("__base__/prototypes/entity/pipecovers")
+﻿require("__base__/prototypes/entity/pipecovers")
 local data = _G.data
+local pipecoverspictures = _G.pipecoverspictures
 local circuit_connector_definitions = _G.circuit_connector_definitions
 local universal_connector_template = _G.universal_connector_template
 -------------------------------------------------------------------------------
@@ -39,7 +40,7 @@ local myStorageTank = {
 			{ position = {-1.5, -0.5}},
 			{ position = {-1.5, 0.5}}
 		},
-		pipe_covers = pipecovers.pipecoverspictures(),
+		pipe_covers = pipecoverspictures(),
 	},
 	flow_length_in_ticks = 1,
 	pictures = {
