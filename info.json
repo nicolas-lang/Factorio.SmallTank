@@ -1,11 +1,11 @@
 {
 	"name": "nco-SmallTank",
-	"version": "0.0.4",
-	"title": "Small Tank",
+	"version": "0.0.5",
+	"title": "Small Storage Tank",
 	"author": "Karoschl",
 	"contact": "",
 	"homepage": "",
-	"description": "Adds 2x2 small tanks to the game.",
+	"description": "Adds 2x2 small storage tanks to the game.",
 	"factorio_version": "1.1",
 	"dependencies": [
 		"base >= 1.0"
