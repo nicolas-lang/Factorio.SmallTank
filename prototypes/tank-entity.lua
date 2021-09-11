@@ -109,5 +109,5 @@ logData.vehicle_impact_sound = {}
 logData.working_sound = {}
 logData.circuit_connector_sprites = {}
 logData.circuit_wire_connection_points = {}
-log(serpent.block(logData, {comment = false, numformat = '%1.8g', compact = true } ))
+--log(serpent.block(logData, {comment = false, numformat = '%1.8g', compact = true } ))
 -------------------------------------------------------------------------------------
