@@ -27,7 +27,9 @@ local tankTech = {
 	}
 -------------------------------------------------------------------------------------
 if mods["Krastorio2"] then
-	table.insert(tankTech.prerequisites, "kr-containers")
+	if data.raw.technology["kr-containers"] then
+		table.insert(tankTech.prerequisites, "kr-containers")
+	end
 	table.insert(tankTech.prerequisites, "kr-steel-fluid-handling")
 else
 	table.insert(tankTech.prerequisites, "fluid-handling")
