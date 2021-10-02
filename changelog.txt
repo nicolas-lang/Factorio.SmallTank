@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+  Bugfixes:
+    - Fixed crash with K2 when K2 containers are disabled  (https://github.com/nicolas-lang/Factorio.SmallTank/issues/2)
+---------------------------------------------------------------------------------------------------
 Version: 0.0.6
   Changes:
     - removed superfluous log outputs
