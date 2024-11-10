@@ -7,10 +7,12 @@ data:extend({
 		energy_required = 30,
 		enabled = false,
 		ingredients = {
-			{"pump", 1},
-			{"pipe", 4},
-			{"storage-tank", 1}
+			{ type = "item", name = "storage-tank", amount = 5 },
+			{ type = "item", name = "pipe",         amount = 4 },
+			{ type = "item", name = "pump",         amount = 1 }
 		},
-		result = "small-storage-tank",
+		results = {
+			{ type = "item", name = "small-storage-tank", amount = 1 },
+		}
 	},
 })
