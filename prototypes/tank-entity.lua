@@ -72,21 +72,21 @@ local myStorageTank = {
 }
 
 circuit_connector_definitions["small-storage-tank"] = circuit_connector_definitions.create_vector
-	(
-		universal_connector_template,
-		{
-			{ variation = 2, main_offset = util.by_pixel(0, 3),   shadow_offset = util.by_pixel(-2, 3),  show_shadow = true },
-			{ variation = 4, main_offset = util.by_pixel(-4, 18), shadow_offset = util.by_pixel(-2, 18), show_shadow = true },
-			{ variation = 4, main_offset = util.by_pixel(-4, 18), shadow_offset = util.by_pixel(-2, 18), show_shadow = true },
-			{ variation = 4, main_offset = util.by_pixel(-4, 18), shadow_offset = util.by_pixel(-2, 18), show_shadow = true }
-		}
-	)
+(
+  universal_connector_template,
+  {
+    { variation = 27, main_offset = util.by_pixel(16, -6), shadow_offset = util.by_pixel(16, -6), show_shadow = false },
+    { variation = 27, main_offset = util.by_pixel(16, -6), shadow_offset = util.by_pixel(16, -6), show_shadow = false },
+    { variation = 27, main_offset = util.by_pixel(16, -6), shadow_offset = util.by_pixel(16, -6), show_shadow = false },
+    { variation = 27, main_offset = util.by_pixel(16, -6), shadow_offset = util.by_pixel(16, -6), show_shadow = false },
+  }
+)
+
 myStorageTank.vehicle_impact_sound = util.table.deepcopy(
 	data.raw["storage-tank"]["storage-tank"]["vehicle_impact_sound"]
 )
 myStorageTank.working_sound = util.table.deepcopy(data.raw["storage-tank"]["storage-tank"]["working_sound"])
-myStorageTank.circuit_connector_sprites = circuit_connector_definitions["small-storage-tank"].sprites
-myStorageTank.circuit_wire_connection_points = circuit_connector_definitions["small-storage-tank"].points
+myStorageTank.circuit_connector = circuit_connector_definitions["small-storage-tank"]
 myStorageTank.circuit_wire_max_distance = 9
 myStorageTank.collision_box = { { -(2 / 2 - 0.01), -(2 / 2 - 0.01) }, { (2 / 2 - 0.01), (2 / 2 - 0.01) } }
 myStorageTank.selection_box = { { -(2 / 2), -(2 / 2) }, { (2 / 2), (2 / 2) } }

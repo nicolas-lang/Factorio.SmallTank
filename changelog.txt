@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 25. 07. 2026
+  Changes:
+    - Moved small-storage-tank recipe to the fluid logistics row to match storage-tank.
+  Bugfixes:
+    - Fixed circuit connector definition so circuit connectors appear in game again.
+---------------------------------------------------------------------------------------------------
 Version: 2.0.0
 Date: 10. 11. 2024
   Major Features:
