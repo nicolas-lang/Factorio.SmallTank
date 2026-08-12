@@ -1,6 +1,10 @@
 on: push
 name: Check & Release
+concurrency:
+  group: check-release-${{ github.sha }}
+  cancel-in-progress: ${{ startsWith(github.ref, 'refs/tags/') }}
 jobs:
+
   lint:
     runs-on: ubuntu-latest
     steps:
